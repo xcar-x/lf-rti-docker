@@ -1,0 +1,16 @@
+THIRD-PARTY SOFTWARE NOTICES AND INFORMATION
+
+This project includes third-party software components, which are distributed under the
+following licenses. Full licenses and notices are provided in the
+[third-party-licenses](third-party-licenses) subdirectory.
+
+---
+
+Component: reactor-c
+Version: 4f183a4 (2025-01-24)
+License: BSD-2-Clause
+License text: https://github.com/lf-lang/reactor-c/blob/4f183a4/LICENSE.md
+Source: https://github.com/lf-lang/reactor-c/tree/4f183a4
+
+For the full license text, see:
+[third-party-licenses/reactor_c_LICENSE](third-party-licenses/reactor_c_LICENSE)
