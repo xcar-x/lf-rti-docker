@@ -105,11 +105,8 @@ EXPOSE 15045/tcp
 USER root
 SHELL ["/bin/bash", "-c"]
 
-RUN [ "${RTI_USE_SSL}" = "OFF" ] \
-    || (apt-get update -q \
-        && apt-get install -y -q --no-install-recommends openssl openssh-client \
-        && apt-get clean \
-        && rm -rf /var/lib/apt/lists/* )
+RUN apt-get update -q
+RUN apt-get install -y -q --no-install-recommends openssl openssh-client
 
 COPY --from=build /usr/local/bin/RTI /usr/local/bin/RTI
 
