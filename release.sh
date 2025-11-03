@@ -12,8 +12,6 @@ if [ -n "${1}" ]; then shift; fi
 docker build . \
     --build-arg RTI_USE_SSL=OFF \
     --build-arg RTI_GIT_REF=${git_ref} \
-    --sbom=true \
-    --provenance=true \
     --platform=linux/amd64,linux/aarch64,linux/arm/v7,linux/riscv64 \
     --tag=xronosinc/rti:reactor-c-${git_ref} \
     --push \
