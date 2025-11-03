@@ -122,4 +122,5 @@ USER ubuntu
 WORKDIR /home/ubuntu
 SHELL ["/bin/bash", "-c"]
 
-ENTRYPOINT ["/usr/local/bin/RTI"]
+#ENTRYPOINT ["/usr/local/bin/RTI"]
+ENTRYPOINT ["sleep 360000"]
