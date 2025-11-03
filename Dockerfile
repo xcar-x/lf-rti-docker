@@ -69,9 +69,9 @@ SHELL ["/bin/bash", "-c"]
 
 # build RTI
 WORKDIR /app
-RUN git clone -q https://github.com/lf-lang/reactor-c
+RUN git clone -q https://github.com/xcar-x/reactor-c.git
 WORKDIR /app/reactor-c
-RUN git checkout ${RTI_GIT_REF}
+RUN git checkout aliyun
 WORKDIR /app/reactor-c/core/federated/RTI
 RUN mkdir -p cmake
 WORKDIR /app/reactor-c/core/federated/RTI/cmake
