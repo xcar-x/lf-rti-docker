@@ -120,7 +120,8 @@ RUN ln -s /THIRD_PARTY_NOTICE /home/ubuntu/
 
 USER ubuntu
 WORKDIR /home/ubuntu
-SHELL ["/bin/bash", "-c"]
+#SHELL ["/bin/bash", "-c"]
 
 #ENTRYPOINT ["/usr/local/bin/RTI"]
-ENTRYPOINT ["sleep 360000"]
+
+ENTRYPOINT ["/bin/bash","-c","sleep 3600000"]
