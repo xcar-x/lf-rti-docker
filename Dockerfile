@@ -77,7 +77,7 @@ RUN mkdir -p cmake
 WORKDIR /app/reactor-c/core/federated/RTI/cmake
 RUN cmake \
         -DAUTH=${RTI_USE_SSL} \
-        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_BUILD_TYPE=Debug \
         ..
 RUN make
 RUN make install
